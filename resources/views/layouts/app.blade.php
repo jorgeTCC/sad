@@ -12,6 +12,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/stylesheets/locastyle.css') }}" rel="stylesheet">
 </head>
 <body>
     <div id="app">
@@ -70,11 +71,10 @@
                 </div>
             </div>
         </nav>
-
         @yield('content')
     </div>
-
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ asset('assets/javascripts/locastyle.js') }}"></script>
 </body>
 </html>
