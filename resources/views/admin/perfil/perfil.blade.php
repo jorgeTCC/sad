@@ -4,7 +4,6 @@
    <h1 class="ls-title-intro ls-ico-users">Meu perfil</h1>
    <div class="ls-box">
       <div class="ls-float-right ls-regroup">
-         <a href="" class="ls-btn-primary" target="_blank">Acessar o Painel</a>
          <div data-ls-module="dropdown" class="ls-dropdown ls-pos-right">
             <a href="#" class="ls-btn"></a>
             <ul class="ls-dropdown-nav">
@@ -12,7 +11,6 @@
                   <a href="" data-ls-fields-enable="#domain-form" data-toggle-class="ls-display-none" data-target=".domain-actions" class="domain-actions">Editar</a>
                </li>
                <li><a href="#" data-ls-module="modal" data-target="#editPassword">Alterar senha</a></li>
-               <li><a href="#">Desativar</a></li>
             </ul>
          </div>
       </div>
@@ -36,7 +34,7 @@
             </label>
             <label class="ls-label col-md-6 col-lg-8">
             <b class="ls-label-text">Informações:</b>
-            <textarea name="" id="" cols="30" rows="5">com Fulano de Tal no telefone: 11 5555-5555. Horários entre 12:00 e 16:00 dias úteis.</textarea>
+            <textarea name="" id="" cols="30" rows="5">{{ Auth::user()->cpf }}</textarea>
             </label>
          </fieldset>
          <div class="domain-actions ls-display-none">
